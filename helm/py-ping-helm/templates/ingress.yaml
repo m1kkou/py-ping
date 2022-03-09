@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: py-logout-ingress
+  name: py-ping-helm-ingress
 spec:
   rules:
     - http:
@@ -10,6 +10,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: py-ping-svc
+                name: py-ping-helm-svc
                 port:
-                  number: 2345
+                  number: 2346

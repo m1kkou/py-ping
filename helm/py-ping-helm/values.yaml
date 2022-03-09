@@ -1,0 +1,3 @@
+deployment:
+  image: "m1kkou/py-ping"
+  tag: "latest"

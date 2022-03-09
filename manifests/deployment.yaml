@@ -1,19 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: py-ping-pong-dep
+  name: py-ping-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: py-ping-pong
+      app: py-ping
   template:
     metadata:
       labels:
-        app: py-ping-pong
+        app: py-ping
     spec:
       containers:
         - name: py-ping
           image: m1kkou/py-ping:latest
-        - name: py-pong
-          image: m1kkou/py-ping:pong-latest

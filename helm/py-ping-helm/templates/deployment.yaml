@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: py-ping-helm-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: py-ping-helm
+  template:
+    metadata:
+      labels:
+        app: py-ping-helm
+    spec:
+      containers:
+        - name: py-ping-helm
+          image: {{ .Values.deployment.image }}:{{ .Values.deployment.tag }}

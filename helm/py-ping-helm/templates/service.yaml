@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: py-ping-svc
+  name: py-ping-helm-svc
 spec:
   type: ClusterIP
   selector:
-    app: py-ping
+    app: py-ping-helm
   ports:
     - name: ping
-      port: 2345
+      port: 2346
       protocol: TCP
       targetPort: 3000
