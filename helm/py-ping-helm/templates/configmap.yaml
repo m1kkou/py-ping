@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: py-ping-config
+data:
+    config.json: |
+        {
+            "environment" : "dev"
+        }
