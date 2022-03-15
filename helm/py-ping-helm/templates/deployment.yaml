@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: py-ping-helm
-          image: {{ .Values.deployment.image }}:{{ .Values.deployment.tag }}
+          image: {{ .Values.deployment.image }}:0.1
