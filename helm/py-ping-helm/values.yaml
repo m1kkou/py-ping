@@ -1,5 +1,5 @@
 deployment:
   image: "m1kkou/py-ping"
-  tag: "latest"
+  tag: "0.1"
 name: py-ping-helm
 replicas: 1
