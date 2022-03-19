@@ -1,6 +1,6 @@
 deployment:
   image: "m1kkou/py-ping"
   tag: "0.2"
-  appVersion: "1.1.14"
+  appVersion: "1.1.15"
 name: py-ping-helm
 replicas: 1
